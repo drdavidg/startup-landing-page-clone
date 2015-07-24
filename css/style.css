@@ -6,6 +6,10 @@
  *    without disabling user zoom.
  */
 
+ div {
+     border: 1px solid Chocolate;
+ }
+
 html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
@@ -19,6 +23,28 @@ html {
 body {
   margin: 0;
 }
+
+/*David's added css */
+.nav img {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+}
+.nav li {
+    display: inline;
+}
+ul {
+  list-style: none;
+  margin: 0 auto;
+  width: auto;
+  text-align: center;
+}
+.nav a{
+    display:inline-block;
+    padding:10px;
+}
+
+
 
 /* HTML5 display definitions
    ========================================================================== */
