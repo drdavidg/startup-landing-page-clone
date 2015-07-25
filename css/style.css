@@ -7,7 +7,7 @@
  */
 
  div {
-     border: 1px solid Chocolate;
+     /*border: 1px solid Chocolate;*/
  }
 
 html {
@@ -25,23 +25,42 @@ body {
 }
 
 /*David's added css */
-.nav img {
+/*had to battle some css inheritance issues here */
+ul li a#currentlink  {
+  color: #484848;
+  font-size: 16.5px;
+}
+div img {
+  display: inline;
   height: 40px;
   width: 40px;
-  padding: 10px;
-}
-.nav li {
-    display: inline;
+  vertical-align: middle;
 }
 ul {
-  list-style: none;
-  margin: 0 auto;
-  width: auto;
-  text-align: center;
+  display: inline;
+    list-style-type: none;
+    float: right;
 }
-.nav a{
-    display:inline-block;
-    padding:10px;
+li {
+  display: inline;
+  padding: 10px 20px 10px 20px;
+  font-family: arial;
+
+}
+.navi {
+  width: 60%;
+  margin: 20px auto;
+  padding: 10px 0 10px 0;
+
+}
+ul li a, ul li a:visited {
+  text-decoration: none;
+  color: gray;
+
+}
+
+ul li a:hover, ul li a#currentlink:hover {
+  color: black;
 }
 
 
@@ -114,6 +133,7 @@ template {
 
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**
@@ -125,6 +145,7 @@ a:active,
 a:hover {
   outline: 0;
 }
+
 
 /* Text-level semantics
    ========================================================================== */
