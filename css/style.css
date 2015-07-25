@@ -100,9 +100,12 @@ ul li a:hover, ul li a#currentlink:hover {
   color: white;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 300;
   margin-top: 5px;
+}
+.container > button:hover {
+  background-color: #d9400e;
 }
 .container {
   position: relative;
