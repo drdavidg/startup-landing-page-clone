@@ -16,6 +16,12 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 /**
  * Remove default margin.
  */
@@ -25,43 +31,36 @@ body {
 }
 
 /*David's added css */
-/*had to battle some css inheritance issues here */
-ul li a#currentlink  {
-  color: #484848;
-  font-size: 16.5px;
-}
-div img {
-  display: inline;
-  height: 40px;
-  width: 40px;
-  vertical-align: middle;
-}
-ul {
-  display: inline;
-    list-style-type: none;
-    float: right;
-}
-li {
-  display: inline;
-  padding: 10px 20px 10px 20px;
-  font-family: arial;
 
+.top-navigation {
+  background-color: white;
 }
-.navi {
+.top-navigation > .content {
   width: 60%;
-  margin: 20px auto;
-  padding: 10px 0 10px 0;
-
+  margin: 0 auto;
+  display: inline-block;
+  padding: 0px 15px
 }
-ul li a, ul li a:visited {
-  text-decoration: none;
-  color: gray;
+.top-navigation .links li {
+    display: inline-block;
+    margin-left: 25px;
 }
-
-ul li a:hover, ul li a#currentlink:hover {
-  color: black;
+.top-navigation .links {
+  float: right;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #838994;
+  letter-spacing: 0.03em;
+  
 }
-
+.top-navigation .links > .active {
+    color: #4c5058;
+    font-weight: 600;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
+}
 
 
 
