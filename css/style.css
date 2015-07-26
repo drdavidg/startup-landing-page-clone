@@ -35,37 +35,42 @@ div img {
   display: inline;
   height: 40px;
   width: 40px;
-
+  margin-left: 20%;
+  padding-top: 5px;
 }
-ul {
+.navi ul {
     display: inline;
     list-style-type: none;
     float: right;
+    margin-right: 20%;
 }
-li {
+.navi li {
   display: inline;
   padding: 15px 10px 15px 15px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 .navi {
-  width: 60%;
-  margin: 1px auto 0 auto;
+  width: 100%;
+  z-index: 9999;
+  margin: 0px auto 0 auto;
   padding: 10px 0 15px 0;
-
+  position: fixed;
+  background-color: white;
+  display: block;
 }
-ul li a, ul li a:visited {
+.navi ul li a, .navi ul li a:visited {
   text-decoration: none;
   color: gray;
 }
 
-ul li a:hover, ul li a#currentlink:hover {
+.navi ul li a:hover, .navi ul li a#currentlink:hover {
   color: black;
 }
 .hero {
   background-image: url('../img/first-background.jpg');
   background-repeat: no-repeat;
-  background-position: 0 -100px;
+  background-position: 0 -32px;
   background-size: cover;
   width: 100%;
   margin: 0 auto;
@@ -73,14 +78,16 @@ ul li a:hover, ul li a#currentlink:hover {
   /*width: 1600px;*/*/
 
 }
-.hero h1 {
-  text-align: center;
-  padding-top: 210px;
+h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 48px;
-  color: #fff;
   letter-spacing: 0.01em;
   font-weight: 300;
+}
+.hero h1 {
+  text-align: center;
+  padding-top: 275px;
+  color: #fff;
   margin: 0;
 }
 .hero h2 {
@@ -111,10 +118,60 @@ ul li a:hover, ul li a#currentlink:hover {
   position: relative;
   text-align: center;
 }
-
-
-
-
+.graphics {
+  margin: 0 auto;
+  margin: 0 30px;
+  width: 100%;
+  text-align: center;
+}
+.graphics > ul {
+  list-style-type: none;
+  text-align: center;
+}
+.graphics li {
+  margin: 0 30px;
+  display: inline-block;
+}
+.graphics img {
+  height: 125px;
+  width: 125px;
+  padding: 0 75px;
+  display: block;
+  /*margin: 0 30px;*/
+}
+.graphics > h1 {
+  color: #2B2A2A;
+  font-size: 43px;
+  line-height: 50px;
+  margin: 100px auto 50px auto;
+}
+.graphics li > h3 {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  margin: 35px auto;
+  width: auto;
+  color: #2B2A2A;
+  vertical-align: top;
+}
+.thinline {
+  width: 50%;
+  color: gray;
+  margin: 100px auto 20px auto;
+  border: none;
+  height: 1px;
+  background: #EAEAEA;
+}
+footer > div {
+  text-align: center;
+}
+.copyright {
+  font-weight: 100;
+  margin: 25px auto 150px auto;
+  color: #A09F9F;
+}
 /* HTML5 display definitions
    ========================================================================== */
 
@@ -230,10 +287,10 @@ dfn {
  * contexts in Firefox 4+, Safari, and Chrome.
  */
 
-h1 {
+/*h1 {
   font-size: 2em;
   margin: 0.67em 0;
-}
+}*/
 
 /**
  * Address styling not present in IE 8/9.
