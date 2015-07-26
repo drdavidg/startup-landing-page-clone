@@ -164,13 +164,49 @@ h1 {
   height: 1px;
   background: #EAEAEA;
 }
-footer > div {
+.social {
   text-align: center;
 }
-.copyright {
+.social > .content > .icons li {
+  display: inline;
+}
+footer .copyright {
   font-weight: 100;
   margin: 25px auto 150px auto;
   color: #A09F9F;
+  font-size: 14px;
+}
+.social > .content {
+  margin-top: 5px;
+}
+.content > ul {
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  list-style-type: none;
+  display: inline;
+}
+.social .content .icons li {
+    padding: 10px;
+    display: inline-block;
+}
+.content .icons li i {
+  font-size: 16px;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #EAEAEA;
+}
+.content .icons li:first-child i {
+  color: #55ACEE;
+}
+.content .icons li:nth-child(2) i {
+  color: #4C66A4;
+}
+.content .icons li:nth-child(3) i {
+  color: #3F729B;
 }
 /* HTML5 display definitions
    ========================================================================== */
